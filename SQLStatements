@@ -1,1 +1,10 @@
-insert into students ( studentid, studentfirstname, studentlast, programgroup) values( 'A101' 'singh' 'jagtar' ' group1');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A101' 'singh' 'jagtar' ' group1');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A102' 'smith' 'mary' ' group2');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A103' 'jones' 'kindy' ' group3');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A104' 'pike' 'christopher' ' group4');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A105' 'mccoy' 'leonard' ' group5');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A106' 'caidin' 'martin' ' group6');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A107' 'scott' 'jack' ' group7');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A108' 'goldman' 'oscar' ' group8');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A109' 'jones' 'kindy' ' group9');
+insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A1010' 'austin' 'steve' ' group10');
