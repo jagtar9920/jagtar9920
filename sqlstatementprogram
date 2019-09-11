@@ -1,0 +1,10 @@
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '1', 'group1', 'csd2206', '2');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '2', 'group1', 'csd2233', '2');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '3', 'group1', 'csd1122', '3');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '4', 'group2', 'csd1133', '2');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '5', 'group1', 'csd1133', '2');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '6', 'group2', 'csd1134', '3');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '7', 'group1', 'csd1233', '3');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '8', 'group2', 'csd1173', '3');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '9', 'group2', 'csd4521', '3');
+insert into programs ( programgroupid, programgroup, classid, sectionid) values ( '10', 'group3', 'csd1144', '2');
