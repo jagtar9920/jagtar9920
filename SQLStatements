@@ -1,0 +1,1 @@
+insert into students ( studentid, studentfirstname, studentlast, programgroup) values( 'A101' 'singh' 'jagtar' ' group1');
