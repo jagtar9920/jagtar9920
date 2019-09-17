@@ -1,0 +1,11 @@
+Scanner input = new Scanner(System.in);   
+    int songs ;
+    System.out.println(" pls enter the number of songs ");
+    songs = input.nextInt();
+    double dollarprice ;
+    // set dollarprice = 0.99*songs ;
+    dollarprice = 0.99*songs ;
+    // write dollarprice
+  
+    System.out.println( " the price is " +dollarprice);
+    
