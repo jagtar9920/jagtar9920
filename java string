@@ -1,0 +1,5 @@
+String first ="Jagtar";
+        String last = "Singh";
+        String fullname;
+        fullname = first + " " + last;
+        System.out.println("my full name is " +fullname);
