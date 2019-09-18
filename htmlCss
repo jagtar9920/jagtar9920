@@ -1,0 +1,8 @@
+body{ font-size:14px; font-color:dark blue; }
+h1{ backgrond-color:red; color:black; text-align:center; }
+h2{ backgrond-color:blue; color:black; text-align:center; }
+h3{ backgrond-color:pink; color:black; text-align:center; }
+h4{ backgrond-color:yellow; color:black; text-align:center; }
+h5{ backgrond-color:purple; color:black; text-align:center; }
+h6{ backgrond-color:tomato; color:black; text-align:center; }
+p{ color:pink; border: 2px solid blue; padding:2%; margin:20px;}
