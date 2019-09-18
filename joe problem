@@ -1,6 +1,8 @@
-CREATE TABLE veggies
+CREATE TABLE veggies(
 
 veggie_id varchar (20),
 veggie_price money,
 veggie_name varchar(20),
 veggie_type varchar(20)
+primary key (veggie_id)
+);
