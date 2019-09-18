@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head> 
+<style>
+h1{ background-color:red; text-align:center; font-family:verdana; }
+h2{ background-color:red; text-align:center; font-family:verdana; }
+h3{ background-color:red; text-align:center; font-family:verdana; }
+h4{ background-color:red; text-align:center; font-family:verdana; }
+p{ border:2px solid tomato; padding:3%; margin:30px; font-size:30px; color:navy blue;} 
+</style>
+ </head>
+<body>
+<h1 title = "In HTML" > Inline CSS </h1> 
+<p> <em> <mark> Inline CSS </mark> </em> is used to apply a unique style to a single  <abbr title="Hyper Text Markup Language"> HTML</abbr> element </p>
+<h2 title = "In HTML"> Internal CSS </h2>
+<p> An <strong> <mark> internal css </mark> </strong> is used to define the style for <del>many</del> single   <abbr title="Hyper Text Markup Language"> HTML</abbr> page. <br> It is defined in the <b><q> HEAD</q> </b> section of <abbr title="Hyper Text Markup Language"> HTML</abbr> page </p>
+<h3 title = "In HTML"> External CSS </h3>
+<p>  An external <ins> style sheet </ins> is used to define the style for many <abbr title="Hyper Text Markup Language"> HTML</abbr> pages.</p>
+<h4 style="font-size:150%;"> Other elements <small> Subscript, Superscript</small> in<abbr title="Hyper Text Markup Language"> HTML</abbr>  </h4>
+<ol>
+<li> Subscript </li>
+<hr>
+<p> It defines the subscripted value.<br> Example = H <sub> 2 </sub> O </p>
+<li> Superscript</li>
+<hr>
+<p> It defines the superscript value.<br> Example =  x<sup> 2 </sup>  </p>  
+</ol>
+</body>
+</html>
