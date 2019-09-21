@@ -31,3 +31,28 @@ Exercise: read one integer from user and print out the prime numbers between 2 a
 
 a= int(input(" Enter the number:"))
  
+ 
+ 
+ class 
+ class Student:
+   def __init__(self, first_name, last_name, student_id):
+       self.first_name = first_name
+       self.last_name = last_name
+       self.student_id = student_id
+
+   def getbalance(selfself):
+       return 200
+   def getname(self):
+       return self.first_name+" " + self.last_name
+class CestarCollege:
+    def __init__(self,address, manager):
+        self.address = address
+        self.manager = manager
+student1= Student("Adam", "Jane","1234")
+student2 = Student("Rickie", "Singh", "2345")
+student3 = Student("Raman", "Grewal", "3456")
+print(student1.first_name)
+print(student2.student_id)
+
+print (student1.getname())
+print (student1.getbalance())
