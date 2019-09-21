@@ -85,3 +85,35 @@ print (name1.getname())
 print (name1.getbalance())
 print (name1.getnumber())
 print (name2.getlimit())
+
+
+
+class credit:
+    def __index__(self, name, number, balance, limit, ):
+        self.name = name
+        self.number = number
+        self.balance = balance
+        self.limit = limit
+    def swipe(self,amount):
+        self.balance = self.balance + amount
+    def paybalance(self,amount):
+        self.balance = self.balance + amount
+    def setlimit(self, nextlimit):
+        self.limit= newlimit
+
+    def getbalance(self):
+        return self.balance
+
+    def getname(self):
+        return self.name
+
+    def getnumber(self):
+        return self.number
+
+    def getlimit(self):
+        return self.number
+
+    def getlimit(self):
+        return self.limit
+
+name1 = credit("john", "546217", 545, 451)
