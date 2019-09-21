@@ -13,17 +13,18 @@ print ("the greatest number is =" +str(largest))
 
 
 Exercise: read three integers from user and print out if these could be edges of  a right triangle
-x=int(input(" (side of triangle) x =")
-y=int(input("(side of triangle) y =")
-z=int(input("(side of triangle) z =")
-if(a*a=b*b+c*c):
- print("aa=bb+cc")
-elif(b*b=a*a+c*c):
- print("bb=aa+cc)
-elif(c*c=a*a+b*b):
- print("cc=aa+bb)
-else: 
-    print("wrong")
+ x= int(input("x="))
+y= int(input(" y="))
+z = int(input("z="))
+if(x*x == y*y + z*z):
+  print ("xx= yy+ zz . Sides of right angle triangle")
+elif(y*y==x*x+y*y):
+   print("yy=xx+zz. Sides of right angle triangle")
+elif(z*z==x*x+y*y):
+    print("zz=xx+yy.  Sides of right angle triangle")
+else:
+    print("wrong!!")
+
 
 
 Exercise: read one integer from user and print out the prime numbers between 2 and real number.
