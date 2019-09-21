@@ -89,7 +89,7 @@ print (name2.getlimit())
 
 
 class credit:
-    def __index__(self, name, number, balance, limit, ):
+    def __init__(self, name, number, balance, limit, ):
         self.name = name
         self.number = number
         self.balance = balance
