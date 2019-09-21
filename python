@@ -1,0 +1,32 @@
+Exercise: read three integers from user and print out the maximum of the three.
+user_number_1 = int(input("enter the number ="))
+ user_number_2 = int(input("enter the number ="))
+user_number_3= int(input("enter the number ="))
+if (user_number_1>user_number_2)  and (user_number_1>user_number_3):
+    largest=user_number_1
+elif (user_number_2>user_number_1) and (user_number_2>user_number_3):
+    largest=user_number_2
+else:
+(user_number_3>user_number_1) and (user_number_3>user_number_2)
+   largest= user_number_3
+print ("the greatest number is =" +str(largest))
+
+
+Exercise: read three integers from user and print out if these could be edges of  a right triangle
+x=int(input(" (side of triangle) x =")
+y=int(input("(side of triangle) y =")
+z=int(input("(side of triangle) z =")
+if(a*a=b*b+c*c):
+ print("aa=bb+cc")
+elif(b*b=a*a+c*c):
+ print("bb=aa+cc)
+elif(c*c=a*a+b*b):
+ print("cc=aa+bb)
+else: 
+    print("wrong")
+
+
+Exercise: read one integer from user and print out the prime numbers between 2 and real number.
+
+a= int(input(" Enter the number:"))
+ 
