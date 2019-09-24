@@ -18,9 +18,15 @@
          int sum = a + b;
          System.out.println("the sum of " + a + " and " + b + " is " + sum );    
          
-string name 
+string name ( print one word) 
          Scanner input = new Scanner (System.in);
          System.out.println(" plz enter ur name");
          String name = input.next();
          String name1 = input.next();
          System.out.println("you enetred" + name + " " + name1);         
+
+string name (for whole previous line print)
+          Scanner input= new Scanner(System.in);
+        System.out.println("plz enetr ur name");
+        String name = input.nextLine();
+        System.out.println(" you entered " + name);
