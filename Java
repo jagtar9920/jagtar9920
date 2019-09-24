@@ -38,4 +38,31 @@ string name (for whole previous line print)
 
 
 claculations 
-       
+   Scanner input = new Scanner(System.in);
+       int OriginalPrice;
+       int DiscountRate;
+       int AmountSaved;
+       int SalePrice;
+       double tax;
+       double TotalPrice;
+       double c;
+        c = .065; 
+        
+      System.out.println( " Enter the ItemName");
+      String name = input.next();
+      
+      System.out.println(" The discount is : ");
+      DiscountRate= input.nextInt();
+      
+      System.out.println( " The original price is : ");
+      OriginalPrice= input.nextInt();
+      
+      AmountSaved = OriginalPrice * DiscountRate/100;
+      SalePrice = OriginalPrice - AmountSaved;
+      tax = SalePrice * c ;
+      TotalPrice = SalePrice + tax;
+      
+      System.out.println("The tax is : " + tax);
+      System.out.println(" The Sale Price is : " +SalePrice);
+      System.out.println( " Amount Saved is : " + AmountSaved );
+      System.out.println("Total Price is : " + TotalPrice);    
