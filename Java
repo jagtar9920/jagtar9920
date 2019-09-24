@@ -1,6 +1,11 @@
- Sum in java enter value by user 
+to make a comment /*  */
+  //
+
+
+
+Sum in java enter value by user 
  
- Scanner input = new Scanner(System.in);
+         Scanner input = new Scanner(System.in);
          int a;
          int b;
          int sum;
