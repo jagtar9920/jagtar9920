@@ -1,0 +1,20 @@
+ Sum in java enter value by user 
+ 
+ Scanner input = new Scanner(System.in);
+         int a;
+         int b;
+         int sum;
+         System.out.println("plz enter the first value");
+         a= input.nextInt();
+         System.out.println("plz enter second value ");
+         b= input.nextInt();
+         sum = a+b;
+         System.out.println("the sum of" + a + "and" + b + " is " +sum);
+       
+       
+       simple sum in java 
+       int a=2;
+         int b=4;
+         int sum = a + b;
+         System.out.println("the sum of " + a + " and " + b + " is " + sum );    
+         
