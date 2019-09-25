@@ -16,3 +16,49 @@ insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock)
 insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A104', 'fan', '6',7);
 insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A105', 'a.c.', '1',2);
 select*from warehouse
+
+create table orders(
+order_id varchar(20),
+ItemNumber varchar(20),
+TruckNumber varchar(20)
+primary key (order_id)
+); 
+ 
+ insert into  orders( order_id,ItemNumber,TruckNumber) values('1', 'A101', 'b35p');
+ insert into  orders( order_id,ItemNumber,TruckNumber) values('2', 'A102', 'pb06');
+ insert into  orders( order_id,ItemNumber,TruckNumber) values('3', 'A103', 'pb11');
+ insert into  orders( order_id,ItemNumber,TruckNumber) values('4', 'A104', 'pb21');
+ insert into  orders( order_id,ItemNumber,TruckNumber) values('5', 'A105', 'pb12');
+ select*from orders 
+ delete from orders
+
+ select*from orders as o, truck as t, warehouse as w
+ where o.ItemNumber=w.ItemNumber and
+ o.TruckNumber=t.TruckNumber
+ 
+ insert into truck (TruckNumber,DriverName,OrderNumber) values('pb35', 'jagga', '1');
+insert into truck (TruckNumber,DriverName,OrderNumber) values('pb06', 'kalla', '2');
+insert into truck (TruckNumber,DriverName,OrderNumber) values('pb26', 'manga', '3');
+insert into truck (TruckNumber,DriverName,OrderNumber) values('pb11', 'bitta', '4');
+insert into truck (TruckNumber,DriverName,OrderNumber) values('pb01', 'prabh', '5');
+select*from truck;
+
+insert into warehouse (ItemNumber, ItemDescription, ShelveNumber, QuantityInStock, item_price) values('A101', 'fridge', '4',9,1);
+insert into warehouse (ItemNumber, ItemDescription, ShelveNumber, QuantityInStock, item_price) values('A102', 'microwave','6', 7,5);
+insert into warehouse (ItemNumber, ItemDescription, ShelveNumber, QuantityInStock, item_price) values('A103', 't.v.', '5',3,6);
+insert into warehouse (ItemNumber, ItemDescription, ShelveNumber, QuantityInStock, item_price) values('A104', 'fan', '6',7,1);
+insert into warehouse (ItemNumber, ItemDescription, ShelveNumber, QuantityInStock, item_price) values('A105', 'a.c.', '1',2,5);
+
+ select*from warehouse;
+ 
+ create table truck (
+TruckNumber varchar(20),
+ DriverNumber varchar(20),
+OrderNumber varchar(20),
+ 
+primary key (TruckNumber) 
+ );
+
+
+ alter table warehouse
+ add item_price money;
