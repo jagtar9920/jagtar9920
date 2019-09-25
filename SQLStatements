@@ -8,3 +8,11 @@ insert into students ( studentid, studentlastname, studentfirst, programgroup) v
 insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A108' 'goldman' 'oscar' ' group8');
 insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A109' 'jones' 'kindy' ' group9');
 insert into students ( studentid, studentlastname, studentfirst, programgroup) values( 'A1010' 'austin' 'steve' ' group10');
+
+
+insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A101', 'fridge', '4',9);
+insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A102', 'microwave', '7',8);
+insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A103', 't.v.', '5',3);
+insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A104', 'fan', '6',7);
+insert into warehouse (ItemNumber, ItemDescription,ShelveNumber,QuantityInStock) values('A105', 'a.c.', '1',2);
+select*from warehouse
