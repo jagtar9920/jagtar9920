@@ -53,7 +53,7 @@ insert into warehouse (ItemNumber, ItemDescription, ShelveNumber, QuantityInStoc
  
  create table truck (
 TruckNumber varchar(20),
- DriverNumber varchar(20),
+ DriverName varchar(20),
 OrderNumber varchar(20),
  
 primary key (TruckNumber) 
