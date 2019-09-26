@@ -6,3 +6,112 @@ h4{ backgrond-color:yellow; color:black; text-align:center; }
 h5{ backgrond-color:purple; color:black; text-align:center; }
 h6{ backgrond-color:tomato; color:black; text-align:center; }
 p{ color:pink; border: 2px solid blue; padding:2%; margin:20px;}
+
+
+<html>
+<head>
+<title>My Resume</title>
+<style>
+
+
+span.note {font-size:120%;color:red;}
+
+
+
+
+
+.cities {
+  background-color: pink;
+  color: red;
+  margin: 20px;
+  padding: 20px;.
+}
+.main{
+  background-color: skyblue;
+  color: red;
+  margin: 20px;
+  padding: 20px;.
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<div class = "cities">
+<h1>JAGTAR SINGH</h1></div ="cities">
+<p><h2>Address:  21 Joycedale Street,Markham, ON (( LS3 3E6)<br>Phone: 4372256647</p></h2>                                                   <p><h2>Email: jagtar99200@gmail.com</p></h2>
+<h2><span class="note">OBJECTIVE</span></h2>
+<p><h2>Friendly,motivated and determined student seeking for a part-time job in a leading-edge company delivering quality services, to make my own professional identity
+and utilize & coordinate my skills and aptitudes for the progress of the Organization.</p></h2>
+<div class = "main"><h3>PERSONAL PROFILE</h3>
+<p>
+<ul>
+<li> Detail oriented, determined, patient, adaptive and punctual Good leadership and presentational skills</li>
+<li> Strong communication and interactional skills</li>
+<li> Adaptable and willing to take on any job task</li>
+<li> Ability to work efficiently for long hours, with good time management abilities to meet deadlines</li>
+<li> Ability to build a good rapport with the customers and the team members</li>
+<li> Flexible  mind to work as a good team member</li>
+</ul>
+</p></div class = "main">
+<div class = "main"><h4>SKILLS/ABILITIES</h4></div class = "main">
+<style>
+table,th,td{
+ border: 1px solid black;
+ border-collapse: collapse;}
+ </style>
+<table style="width:100%">
+  <tr>
+    <th>language</th>
+    <th>Software</th>
+    <th>Tools</th>
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td>Visual studio</td>
+    <td>JIRA</td>
+  </tr>
+  <tr>
+    <td>C++</td>
+    <td rowspan="2">Introduction to HTML 5</td>
+    <td>QC</td>
+  </tr>
+  <tr>
+    <td>Javascript</td>
+    <td>LR</td>
+</tr>
+<tr>
+<td></td>
+<td collspan="2">Cester college of Technology</td>
+<td></td>
+  </tr>
+</table>
+<h2 style =  "text-align:100%;color:blue"> Availability </h2>
+
+ <table style= "width:100%">
+  <tr>
+    <th>Sunday</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+  </tr>
+  <tr>
+    <td> Full Time </td>
+    <td> Full Time </td>
+    <td> 3pm-Next morning </td>
+    <td> Not Available </td>
+    <td> Night Shift </td>
+    <td> Full Time </td>
+    <td> Night Shift </td>
+   </tr>
+ </table>
+ 
+</BODY>
+</HTML>
