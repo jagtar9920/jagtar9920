@@ -69,17 +69,28 @@ claculations
       
 1 oct
       
-       public static  double average(int x, int y){
+        public class Methodss {
+      public static  int increase(int x){
+           x=x+1;
+           return x;
+           
+      } 
+   public static  double average(int x, int y){
        double avg = (x+y)/2.0;
        return  avg; 
-       }
-       public static void showMessage(){
+   }
+    public static void showMessage(){
         System.out.println("Hello!");
          
-      } 
-       public static void main(String[] args) {
+    } 
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         showMessage();
+        int v = 5;
+         System.out.println("before v:"+v);
+        
+        v = increase(v);
+        System.out.println("after v:"+v);  
      System.out.println("Please enter two values:");
      int x = input.nextInt();
      int y = input.nextInt();
