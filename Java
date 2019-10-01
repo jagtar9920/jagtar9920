@@ -65,4 +65,29 @@ claculations
       System.out.println("The tax is : " + tax);
       System.out.println(" The Sale Price is : " +SalePrice);
       System.out.println( " Amount Saved is : " + AmountSaved );
-      System.out.println("Total Price is : " + TotalPrice);    
+      System.out.println("Total Price is : " + TotalPrice);   
+      
+1 oct
+      
+       public static  double average(int x, int y){
+       double avg = (x+y)/2.0;
+       return  avg; 
+       }
+       public static void showMessage(){
+        System.out.println("Hello!");
+         
+      } 
+       public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        showMessage();
+     System.out.println("Please enter two values:");
+     int x = input.nextInt();
+     int y = input.nextInt();
+     double avg = average(x,y);
+      System.out.println("the average is " +avg); 
+       
+     System.out.println("Please enter two values:");
+     int a = input.nextInt();
+     int b = input.nextInt();
+     double avg2 = average(a, b);
+      System.out.println("the average is " +avg2);
