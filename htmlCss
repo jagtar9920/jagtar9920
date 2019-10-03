@@ -115,3 +115,39 @@ table,th,td{
  
 </BODY>
 </HTML>
+
+
+
+<!doctype html>
+<html> 
+<head>
+ <title> FORM </title> 
+</head>
+<body>
+<h2> Job Applicaton </h2> <br>
+<p> Please complete the form below for a position with us. <hr>
+<form action = "/action_page.php"> 
+<fieldset> 
+Full Name * 
+<input type="text" name="firstname" required>
+<input type="text" name="middlename" required>
+<input type="text" name="lastname" required>
+Current Address 
+<input type="text" name="streetaddress" > <br> <br> 
+<input type="text" name="streetaddressline2" > <br> <br>
+<input type="text" name=" city" > <input type="text" name=" state/province" >
+<input type="text" name=" Postal/Zip Code" > 
+<select name = "country">
+<option value ="Please Select ">  Please Select </option>
+ <option value ="USA"> USA </option>
+ <option value ="Canada"> Canada </option>
+ <option value ="Australia"> Australia </option>
+ <option value ="India"> India </option> </select>
+ </fieldset>
+ Email Address * 
+ <input type ="email" name="email" value="eg:abcd@gmail.com" hidden>
+ <br> <br> 
+ Phone Number 
+ <input type="text" name=" areacode" >  <input type="text" name="phoneNumber" > </form>
+ </body>
+ </html>
