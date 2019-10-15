@@ -9,3 +9,52 @@ Scanner input = new Scanner(System.in);
   
     System.out.println( " the price is " +dollarprice);
     
+IfStatement
+Scanner input = new Scanner(System.in);
+    int x, y;
+    
+    System.out.println("Please Enter the first number:");
+    x = input.nextInt();
+    
+    System.out.println("please enter the second number:");
+    y = input.nextInt();
+    
+    if(x>y){
+     // System.out.println(x+ " is greater than " + y);
+        if(x>0)
+        System.out.println(x+ " is greater than " + y + " and positive");  
+        else  
+        System.out.println(x+ " is greater than " + y + " and negative");
+    }
+    else  
+        System.out.println(y+ " is greater than " + x);
+        
+        
+ elseIf
+ Scanner input = new Scanner(System.in);
+    System.out.println("Enter the score");
+    double score = input.nextDouble();
+    
+ 
+    if(score<60)
+        System.out.println("grade e");
+    else if(score<70)
+        System.out.println("grade D");
+    else if(score<80)
+        System.out.println("grade  C");
+    else if(score<90)
+        System.out.println("grade B");
+    else
+        System.out.println("grade A")
+        
+  AndOr
+   Scanner input = new Scanner(System.in);
+       double a = input.nextDouble();
+       double b = input.nextDouble();
+       
+       if(a>=0 && b>=0)//and &&
+           System.out.println("AND: positive");
+       if((a>=0 || b>=0) && (a==0))
+            System.out.println(" OR: positive");
+       if (!(a>0))
+            System.out.println("Hello");
