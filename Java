@@ -102,3 +102,85 @@ claculations
      int b = input.nextInt();
      double avg2 = average(a, b);
       System.out.println("the average is " +avg2);
+      
+      
+      
+      Loops....................
+          Scanner input = new Scanner(System.in);
+        
+        int number;
+        int total = 0;
+        int count;
+        
+        System.out.println("this program calculates the");
+        count = 1;
+        while(count<=5){
+        System.out.println("enter a number");
+        number = input.nextInt();
+        total = total+number;
+         
+        ++count;
+        }
+        System.out.println("total of five numbers " + total);
+        
+        System.out.println("this program calculates the");
+        int i;
+        for(i = 1; i<=5; ++i){
+        System.out.println("enter a number");
+        number = input.nextInt();
+        total = total+number;
+        }
+        System.out.println("total of five numbers " + total);
+
+            
+        
+     /*  int count =0;
+      while(count<10) {
+          System.out.println(count + " WELCOME");
+          ++count;
+      }
+      String s;
+      System.out.println(" do you want to add number ");
+      s = input.next();
+     int sum = 0;
+           
+      while ("yes".equals(s)){
+        
+
+           System.out.println("please enter the number");
+           int nbr = input.nextInt();
+           sum = sum + nbr;
+            System.out.println(sum);
+            System.out.println("do you want to add number");
+           count =1;
+           sum =0;
+           while(count<=10){
+               sum = sum + count;
+               ++count;
+            }
+          
+            
+            
+              count =1;
+              sum =0;
+             do{
+                 sum = sum+count;
+                 ++count;
+             }
+             while(count>=10);
+              System.out.println(sum);
+              //**************
+              sum = 0 ;
+               System.out.println(sum);
+               for(int i=0; i<=10; ++i){
+                   sum = sum +i;
+               }
+               System.out.println(sum);
+               
+               sum = 0 ;
+               System.out.println(sum);
+               for(int i=10; i>0; --i){
+                   sum = sum +i;
+               }
+               System.out.println(sum);*/
+    
