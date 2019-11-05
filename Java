@@ -183,4 +183,44 @@ claculations
                    sum = sum +i;
                }
                System.out.println(sum);*/
+               
+               
+               public class Lab3{
+
+     public static int getAge(){
+     Scanner input = new Scanner(System.in);
+     System.out.println("Enter your guess for age: ");
+     int age = input.nextInt();
+     return age ;
+    }
+    
+    public static int getWeight(){
+     Scanner input = new Scanner(System.in);
+     System.out.println("Enter your guess for weight: ");
+     int weight = input.nextInt();
+     return weight ;
+    }
+    
+    public static String getMonth(){
+     Scanner input = new Scanner(System.in);
+     System.out.println("Enter your guess birth month. ");
+     String birthMonth = input.next();
+     return birthMonth ;
+    }
+    
+    public static void correctAnswers(int age, int weight, String birthMonth){
+     if (age <= 25)
+        System.out.println("Congratulations, the age is 25 or less. ");
+     if (weight >= 128)
+        System.out.println("Congratulations, the weight is 128 or more. ");
+     if ("April".equals(birthMonth))
+        System.out.println("Congratulations, the birthMonth is April. ");
+    }    
+  
+    
+    public static void main(String[] args) {
+      getAge();
+      getWeight();
+      getMonth();
+      correctAnswers(int age, int weight, String birthMonth);
     
