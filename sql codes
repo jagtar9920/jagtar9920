@@ -4,5 +4,13 @@ select * from bramptondata
 where solddate < '2019/9/1'
 order by solddate desc;
 
+select * from bramptondata 
+where solddate > '2019/9/1'
+order by solddate desc;
+
 select count(*) from bramptondata 
  where solddate >= '2019/9/1';
+ 
+ select b.Type, avg([Sold Price]) from bramptondata as b 
+group by b.Type
+order by avg([Sold Price]) desc;
