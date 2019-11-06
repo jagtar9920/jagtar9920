@@ -14,3 +14,29 @@ select count(*) from bramptondata
  select b.Type, avg([Sold Price]) from bramptondata as b 
 group by b.Type
 order by avg([Sold Price]) desc;
+
+ select b.Type, Description, avg([Sold Price]) from bramptondata as b 
+group by b.Type, Description
+order by avg([Sold Price]) desc;
+
+ select b.Type, Description, Bedroom, avg([Sold Price]) from bramptondata as b 
+group by b.Type, Description, Bedroom
+order by avg([Sold Price]) desc;
+
+ select b.Type, Description, avg(Bedroom), avg([Sold Price]) from bramptondata as b 
+group by b.Type, Description, Bedroom
+order by avg([Sold Price]) desc;
+
+
+ select count(b.Type) as type,Type, count(Description) as descp,Description, avg(Bedroom) bed, avg([Sold Price]) from bramptondata as b 
+group by b.Type, Description, Bedroom
+order by avg([Sold Price]) desc;
+
+ select month(SoldDate) as sldmth, count(b.Type) as type,Type, count(Description) as descp,Description, avg(Bedroom) bed, avg([Sold Price]) from bramptondata as b 
+group by b.Type, Description, Bedroom,SoldDate 
+order by avg([Sold Price]) desc;
+
+ select month(SoldDate) as sldmth,Type, Bedroom, avg([Sold Price])as soldprice from bramptondata as b 
+group by month(SoldDate), b.Type, Description, Bedroom
+order by month(SoldDate), avg([Sold Price]) desc;
+
