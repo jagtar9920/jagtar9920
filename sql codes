@@ -1,0 +1,3 @@
+select * from bramptondata 
+-- where solddate > '2019/9/1'
+order by solddate desc;
