@@ -1,5 +1,8 @@
 use AdventureWorks2012
 
 select * from bramptondata 
--- where solddate < '2019/9/1'
+where solddate < '2019/9/1'
 order by solddate desc;
+
+select count(*) from bramptondata 
+ where solddate >= '2019/9/1';
