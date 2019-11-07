@@ -64,3 +64,126 @@ where month(solddate) between 9 and 10
 group by Solddate, community, type, description, bedroom
 order by avg([Sold Price]) desc, solddate asc;
 
+select * from tblDepartment
+select * from tblEmployee
+select * from tblTransaction
+
+select * from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber;
+
+ select * from tblTransaction as t
+ left join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber;
+
+
+ select * from tblTransaction as t
+ right join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber;
+
+ select * from tblTransaction as t
+  join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber;
+
+ select * from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like 'y%';
+
+  select * from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like '%y%';
+
+  select * from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like '%y%y%';
+
+   select * from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like '%a%a%t'
+
+    select count(*) from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like '%a%a%t'
+
+    select * from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like 'a%t'
+
+select count(*), EmployeeLastName from tblTransaction as t
+ inner join tblEmployee as e
+ on e.EmployeeNumber = t.EmployeeNumber
+ where EmployeeLastName like 'a%t'
+ group by EmployeeLastName
+
+
+ select * from tblTransaction as t 
+ where EmployeeNumber in (126,127,128,129)
+ order by EmployeeNumber
+
+  select * from tblTransaction as t 
+ where EmployeeNumber in (126,127,128,129) and year(dateoftransaction) = 2015
+ order by EmployeeNumber;
+ 
+
+   select * from tblTransaction as t 
+ where EmployeeNumber in (126,127,128,129) or year(dateoftransaction) = 2015
+ order by EmployeeNumber;
+
+ select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%'
+
+ select * from tblTransaction as t 
+ where EmployeeNumber in
+        ( select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%')
+ order by EmployeeNumber;
+
+  select * from tblTransaction as t 
+ where EmployeeNumber in 
+             ( select EmployeeNumber from tblEmployee where EmployeeLastName not like 'y%')
+ order by EmployeeNumber;
+
+
+   select * from tblTransaction as t 
+ where EmployeeNumber not in 
+         ( select EmployeeNumber from tblEmployee where EmployeeLastName like 'y%')
+ order by EmployeeNumber;
+
+  select * from tblTransaction as t 
+ where EmployeeNumber = any
+           ( select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%')
+ order by EmployeeNumber;
+
+   select * from tblTransaction as t 
+ where EmployeeNumber <= any
+           ( select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%')
+ order by EmployeeNumber;
+
+   select * from tblTransaction as t 
+ where EmployeeNumber = some
+           ( select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%')
+ order by EmployeeNumber;
+
+
+   select * from tblTransaction as t 
+ where EmployeeNumber <> any
+           ( select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%')
+ order by EmployeeNumber;
+
+
+   select * from tblTransaction as t 
+ where EmployeeNumber <> all
+           ( select EmployeeNumber from tblEmployee where EmployeeLastName  like 'y%')
+ order by EmployeeNumber;
+
+
+ select * from tblTransaction as t
+ inner join (select * from tblEmployee where EmployeeLastName like 'y%') as e
+ on e.EmployeeNumber = t.EmployeeNumber                                               
+ order by t.EmployeeNumber
+ -- derived table
+
