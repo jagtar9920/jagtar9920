@@ -117,3 +117,46 @@ class credit:
         return self.limit
 
 name1 = credit("john", "546217", 545, 451)
+
+
+
+
+classactivity
+class car:
+    def __init__(self,model, make, purchase_price, sold_price, purchase_date, sold_date):
+        self.model = model
+        self.make = make
+        self.purchase_price = purchase_price
+        self.sold_price = sold_price
+        self.purchase_date = purchase_date
+        self.sold_date = sold_date
+
+    def getmodel(self):
+        return self.model
+    def setmodel(self, newModel):
+        self.model = newModel
+        
+    def getmake(self):
+        return self.make
+    def setmake(self, newMake):
+        self.make = newMake
+        
+    def getpurchase_price(self):
+        return self.purchase_price
+    def setpurchase_price(self, newpurchase_price):
+        self.purchase_price = newpurchase_price
+    
+    def getsold_price(self):
+        return self.sold_price
+    def setsold_price(self, newsold_price):
+        self.sold_price = newsold_price
+        
+    def getpurchase_date(self):
+        return self.purchase_date
+    def setpurchase_date(self, newpurchase_date):
+        self.purchase_date = newpurchase_date
+        
+    def getsold_date(self):
+        return self.sold_date
+    def setsold_date(self, newsold_date):
+        self.sold_date = newsold_date
