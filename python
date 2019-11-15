@@ -160,3 +160,21 @@ class car:
         return self.sold_date
     def setsold_date(self, newsold_date):
         self.sold_date = newsold_date
+
+from car import car
+c1 = car(1998, "bmw", 20000, 18000, 19102000, 22122013)
+c2 = car(2012, "mustang", 60000, 40000, 17102012, 30092018)
+c3 = car(2015, "charger", 55000, 35000, 11052015, 13072017)
+c4 = car(2016, "challenger", 50000, 36000, 17102016, 21122018)
+
+c1.getmodel()
+c1.setmodel(2013)
+
+c2.getmake()
+c2.setmake("civic")
+
+c3.getpurchase_price()
+c3.setpurchase_price(60000)
+
+c4.getsold_price()
+c4.setsold_price(33000)
