@@ -121,70 +121,11 @@ name1 = credit("john", "546217", 545, 451)
 
 
 
-classactivity
-class car:
-    def __init__(self,model, make, purchase_price, sold_price, purchase_date, sold_date):
-        self.model = model
-        self.make = make
-        self.purchase_price = purchase_price
-        self.sold_price = sold_price
-        self.purchase_date = purchase_date
-        self.sold_date = sold_date
-
-    def getmodel(self):
-        return self.model
-    def setmodel(self, newModel):
-        self.model = newModel
-        
-    def getmake(self):
-        return self.make
-    def setmake(self, newMake):
-        self.make = newMake
-        
-    def getpurchase_price(self):
-        return self.purchase_price
-    def setpurchase_price(self, newpurchase_price):
-        self.purchase_price = newpurchase_price
-    
-    def getsold_price(self):
-        return self.sold_price
-    def setsold_price(self, newsold_price):
-        self.sold_price = newsold_price
-        
-    def getpurchase_date(self):
-        return self.purchase_date
-    def setpurchase_date(self, newpurchase_date):
-        self.purchase_date = newpurchase_date
-        
-    def getsold_date(self):
-        return self.sold_date
-    def setsold_date(self, newsold_date):
-        self.sold_date = newsold_date
-
-from car import car
-c1 = car(1998, "bmw", 20000, 18000, 19102000, 22122013)
-c2 = car(2012, "mustang", 60000, 40000, 17102012, 30092018)
-c3 = car(2015, "charger", 55000, 35000, 11052015, 13072017)
-c4 = car(2016, "challenger", 50000, 36000, 17102016, 21122018)
-
-c1.getmodel()
-c1.setmodel(2013)
-
-c2.getmake()
-c2.setmake("civic")
-
-c3.getpurchase_price()
-c3.setpurchase_price(60000)
-
-c4.getsold_price()
-c4.setsold_price(33000)
+ CLASS ACTIVITY ----------------------------------------------------------
 
 from datetime import date
 import datetime
-from datetime import time
-
-the correct one is this   
-
+from datetime import time   
 
 class car:
     def __init__(self, model, make, purchase_price, sold_price, purchase_year, purchase_month, purchase_date,sold_year, sold_month, sold_date):
