@@ -1,0 +1,21 @@
+select * from dbo.bikes
+select * from dbo.customers
+select * from dbo.repairdata
+
+  
+
+
+select customers.name,customers.cellphone, customers.city, customers.occupation, bikes.Model as bikePurchased from customers,purchasedata,bikes
+where customers.cellphone = purchasedata.cellphone and bikes.BIKE_ID = purchasedata.BIKE_ID 
+ 
+select customers.name, repairdata.repair_id, repairdata.cellphone,repairdata.BIKE_ID as bikeRepaired,repairdata.date_in,repairdata.date_out,repairdata.charge, bikes.Model as bikeRepaired
+from customers, repairdata, bikes  
+where customers.cellphone = repairdata.cellphone and bikes.BIKE_ID = repairdata.BIKE_ID
+order by repair_id
+  
+
+select count(repair_id) bike_count from repairdata
+
+select sum([time spent (hrs)]) as timeSpent,sum(charge) as revenue from repairdata
+
+select sum(charge) as revenue from repairdata
