@@ -19,5 +19,16 @@ group by Bedroom;
  select Address
   from pickering
  where [SOLD PRICE] = (select  max([SOLD PRICE]) from pickering)
+ 
+ -----------------------------------------------------------------------------------------------------------------------
+ 
+ select max([Sold Price]) as topPrice ,Type, Description, Community from pickeringdata
+ group by Community, type, Description , Bedroom
+ 
+ select max([Sold Price]) as topPrice, Community from pickeringdata
+ group by Community
+
+ select bedroom, avg(front) as front,  max([Sold Price]) as soldPrice from pickeringdata
+ group by bedroom;
 
 
