@@ -1,0 +1,23 @@
+select * from pickering
+where Type like 'sem%' ;
+
+
+select Bedroom, avg(Front) as Front,MAX([SOLD PRICE]) as SoldPrice from pickering
+group by Bedroom;
+
+
+
+ select Type,Description,Community,Bedroom,max([SOLD PRICE]) from pickering
+ GROUP BY Type,Description,Community,Bedroom ;
+
+
+ select Community,max([SOLD PRICE])as soldprice from pickering
+ group by Community;
+
+  
+ 
+ select Address
+  from pickering
+ where [SOLD PRICE] = (select  max([SOLD PRICE]) from pickering)
+
+
