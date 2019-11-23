@@ -205,3 +205,52 @@ car_purchase_date = datetime.datetime(c1.getpurchase_year(), c1.getpurchase_mont
 diff = car_sold_date - car_purchase_date
 
 print(diff)
+
+
+
+
+
+---------------------------------------------------------------------------------------
+#class names must start with capital letter (only for first letter)
+class Vehicle:
+    #all variables must be small letters.
+    #if variable consists of two names, then use '_', or set the first character of the second name  with capital.
+    # example: x position or xPosition, but Xposition is wrong
+    def __init__(self, xPos, yPos, id, number_of_bullets, xVelocity, yVelocity, isAlive):
+        self.xPos = xPos
+        self.yPos = yPos
+        self.numberOfBullets = number_of_bullets
+        self.id = id
+        self.xV = xVelocity
+        self.yV = yVelocity
+        self.isValid = isAlive
+
+    def moveTo(self, x, y):
+        self.xPos = x
+        self.yPos = y
+        self.dispalyLocation()
+        self.getStatus()
+
+        
+    def dispalyLocation(self):
+        print("vehicle : " + str(self.id) + " Location: x= " + str(self.xPos) + ", y= " + str(self.yPos))
+
+    def shoot(self):
+        self.numberOfBullets -= 1
+
+    def getStatus(self):
+        print("-----------Status for vehicle: " + str(self.id) + "---------------------------" )
+        print("Number of bullets: " + str(self.numberOfBullets))
+        print("Location: x = " + str(self.xPos) + ", y = " + str(self.yPos))
+        print("velocity: x = " + str(self.xV) + ", Velocity y = " + str(self.yV))
+        print("Is Alive? " + str(self.isValid))
+
+
+
+v1 = Vehicle(0, 0 , "T1" , 100, 2, 3, True)
+v2 = Vehicle(100, 100, "T2", 100, 2, 3, True)
+#print(v1.dispalyLocation())
+
+for i in range (1, 100):
+    v1.moveTo(i, i)
+    v2.moveTo(100-i, 100-i)
