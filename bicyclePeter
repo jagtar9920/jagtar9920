@@ -1,0 +1,25 @@
+select * from bikes;
+select * from customers;
+select * from purchasedata;
+select * from dbo.repairdata
+
+ 
+select customers.name,customers.cellphone, customers.city, customers.occupation, purchasedata.purchase_id from customers right join  purchasedata
+on customers.cellphone = purchasedata.cellphone
+
+  
+select repairdata.repair_id,customers.name,  repairdata.cellphone,repairdata.BIKE_ID ,repairdata.date_in,repairdata.date_out,repairdata.charge
+from  repairdata left join customers
+on  customers.cellphone = repairdata.cellphone
+
+select  bikes.BIKE_ID , purchasedata.purchase_id , bikes.Color , bikes.Model , bikes.PRICE, purchasedata.cellphone from bikes  right join purchasedata
+on purchasedata.BIKE_ID = bikes.BIKE_ID
+group by  bikes.BIKE_ID , purchasedata.purchase_id , bikes.Color , bikes.Model , bikes.PRICE, purchasedata.cellphone
+
+select  bikes.BIKE_ID , repairdata.repair_id, repairdata.date_in, repairdata.date_out, repairdata.timeSpent , bikes.Color , bikes.Model , bikes.PRICE
+from repairdata  left join bikes
+on repairdata.BIKE_ID = bikes.BIKE_ID
+ 
+select count(repair_id) bike_count from repairdata
+
+select sum(timeSpent) as timeSpent(hrs) , sum(charge) as revenue from repairdata
