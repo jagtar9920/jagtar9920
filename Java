@@ -350,3 +350,19 @@ claculations
   ++count;
   for(int i=0; i<count; i++)
     System.out.println(a[i]);
+    
+    
+    
+     final int SIZE = 100;     
+  int[] a = new int[100];
+  int count=0;
+  System.out.println("Please enter a number (-1 to quit");
+  int number = input.nextInt();
+  
+  while ((number!=-1) && (count<SIZE)){
+  a[count] = number;
+  ++count;
+   
+    System.out.println("Please enter a number (-1 to quit");
+    number = input.nextInt();
+  }
