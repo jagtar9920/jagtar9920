@@ -276,5 +276,43 @@ claculations
             ++l;
       }
     }
- 
+ ----------------------------------------------------------------------------------------
+ 26nov
+   int[] A = {1, 2, 3, 4};
+    int[] B = new int[4];
+    B[0] = 12;
+    B[1] = 13;
+    B[2] = 16;
+    B[3] = 19;
+    
+    for(int i=0; i<A.length;i++)
+        System.out.println(A[i]);
+    
+    for(int i=0; i<B.length;i++)
+        System.out.println(B[i]);
+    
+    int sum=0;
+    for(int i=0; i<A.length; i++)
+    sum = sum+A[i];
+    System.out.println("sum: " +sum);
+    
+    double avg = (double)sum/A.length;
+    System.out.println("avg: " +avg);
+    
+    
+    int[] C = {12,20,14,20};
+    int search = 20;
+    for(int i=0; i<C.length; i++)
+        if(C[i]==search){
+            System.out.printf("the element with index %d is equal"
+                    + " to searched value \n",i);
+                break;
+    
+        }
+     int[] f = {12,20,14,20};
+    int searchs = 20;
+    for(int i=0; i<f.length; i++)
+        if(f[i]==search)
+            System.out.printf("the element with index %d is equal"
+                    + " to searched value \n",i);
     
