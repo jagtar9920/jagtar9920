@@ -307,3 +307,30 @@ where remarksforclients like '%pool%'
 print @PriceWithPool 
 
 print @PriceWithPool - @PriceWithOutPool
+
+
+
+
+
+DECLARE @averageSellingPrice as INT;
+DECLARE @sumSellingPrice as INT;
+DECLARE @numberOfRecords as INT;
+declare @soldprice as INT;
+declare @community as varchar(40);
+declare @type as varchar(12);
+Set @numberOfRecords = 0;
+DECLARE @dataCursor as Cursor;
+
+SET @dataCursor = CURSOR for
+select type, community, soldprice
+from thisyear;
+
+open @dataCursor
+while @@Fetch_Status=0
+
+BEGIN
+PRINT @soldprice;
+fetch next from @dataCursor into @type, @Community, @soldprice
+
+END
+print @numberOfRecords
