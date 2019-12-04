@@ -305,3 +305,5 @@ declare @PriceWithPool as float;
 select  @PriceWithPool = avg(soldprice) from thisyear
 where remarksforclients like '%pool%'
 print @PriceWithPool 
+
+print @PriceWithPool - @PriceWithOutPool
