@@ -334,3 +334,32 @@ fetch next from @dataCursor into @type, @Community, @soldprice
 
 END
 print @numberOfRecords
+
+
+
+
+DECLARE @averageSellingPrice as INT;
+DECLARE @sumSellingPrice as INT;
+DECLARE @numberOfRecords as INT;
+declare @soldprice as INT;
+declare @community as varchar(40);
+declare @addresss as varchar(40);
+declare @type as varchar(12);
+Set @numberOfRecords = 0;
+DECLARE @dataCursor as Cursor;
+
+SET @dataCursor = CURSOR for
+select type, community, soldprice, address
+from thisyear;
+
+open @dataCursor
+while @@Fetch_Status=0
+
+BEGIN
+PRINT @soldprice;
+PRINT @type;
+PRINT @addresss;
+fetch next from @dataCursor into @type, @Community, @soldprice, @addresss
+
+END
+print @numberOfRecords
