@@ -499,3 +499,130 @@ print @sumSellingPrice/@numberOfRecordss
 
 
 print @numberOfRecords - @numberOfRecordss 
+
+----------------------------------------------------------------------(5dec)
+select * from textarea
+
+
+
+DELETE FROM textarea WHERE textline IS NULL;
+
+select len(textline), textline as a from textarea
+order by len(textline);
+
+DELETE FROM textarea WHERE len(textline) < 62;
+
+DELETE from textarea WHERE upper(textline) LIKE '%GIFT%';
+
+
+
+Declare @TeslaWordCount as INT;
+select @TeslaWordCount =  count(*) from textarea where upper(textline) like '%TESLA%'; 
+print @TeslaWordCount
+
+Declare @EngineeringWordCount as INT;
+select @EngineeringWordCount =  count(*) from textarea where upper(textline) like '%ENGINEERING%'; 
+print @EngineeringWordCount
+
+Declare @ProductionWordCount as INT;
+select @ProductionWordCount =  count(*) from textarea where upper(textline) like '%PRODUCTION%'; 
+print @ProductionWordCount
+
+Declare @CarWordCount as INT;
+select @CarWordCount =  count(*) from textarea where upper(textline) like '%CAR%'; 
+print @CarWordCount
+
+Declare @FactoryWordCount as INT;
+select @FactoryWordCount =  count(*) from textarea where upper(textline) like '%FACTORY%'; 
+print @FactoryWordCount
+
+Declare @EngineerWordCount as INT;
+select @EngineerWordCount =  count(*) from textarea where upper(textline) like '%ENGINEER%'; 
+print @EngineerWordCount
+
+
+
+DECLARE my_cursor CURSOR FOR
+SELECT textline
+FROM textarea;
+OPEN my_cursor
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+		print 'a';
+		FETCH NEXT FROM my_cursor
+END 
+close my_cursor;
+
+
+DECLARE @textline VARCHAR(50);
+DECLARE my_cursor CURSOR FOR
+SELECT textline
+FROM textarea;
+open my_cursor;
+while (2>1)
+BEGIN
+	FETCH NEXT FROM my_cursor INTO @textline;
+	print @textline;
+END
+CLOSE my_cursor
+DEALLOCATE my_cursor
+
+
+student id = C0758367
+student  name = Jagtar Singh
+Date = 5 Dec., 2019
+
+
+DECLARE @textline VARCHAR(50);
+DECLARE my_cursor CURSOR FOR
+SELECT textline
+FROM textarea;
+open my_cursor;
+while @@fetch_status = 0
+BEGIN
+	FETCH NEXT FROM my_cursor INTO @textline;
+	print @textline;
+END
+CLOSE my_cursor
+DEALLOCATE my_cursor
+
+
+
+DECLARE @textline VARCHAR(250);
+DECLARE @numberOfLines int
+DECLARE my_cursor CURSOR FOR
+SELECT textline
+FROM textarea;
+open my_cursor;
+while @@fetch_status = 0
+BEGIN
+	FETCH NEXT FROM my_cursor INTO @textline;
+	if(upper(@textline) like '%TESLA%' and (upper(@textline) like '%MUSK%'))
+    print @textline;
+END
+CLOSE my_cursor
+DEALLOCATE my_cursor
+
+
+DECLARE @numberOfLines int;
+set @numberOfLines = 0;
+DECLARE my_cursor CURSOR FOR
+SELECT textline
+FROM textarea;
+open my_cursor;
+DECLARE @textline VARCHAR(255), @url VARCHAR(80), @notes VARCHAR(80),  
+@counts int, @time datetime;
+
+while @@fetch_status = 0
+BEGIN
+	FETCH NEXT FROM my_cursor INTO @textline;
+	if(upper(@textline) like '%TESLA%' and (upper(@textline) like '%MUSK%'))
+	begin 
+	set @numberOfLines = @numberOfLines + 1;
+    print @textline;
+	end
+END
+print @numberOfLines;
+CLOSE my_cursor;
+DEALLOCATE my_cursor;
