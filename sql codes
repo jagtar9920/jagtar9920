@@ -626,3 +626,38 @@ END
 print @numberOfLines;
 CLOSE my_cursor;
 DEALLOCATE my_cursor;
+
+------------------------------13dec
+select * from movies
+
+delete from movies
+ where audience_freshness is null 
+
+select adjusted as money, genres from movies
+group by adjusted, genres
+order by adjusted desc 
+
+
+select max(rt_audience_score), studio from movies
+group by studio
+order by max(rt_audience_score) desc
+
+select avg(adjusted) as avg_revenue, year from movies
+group by  year  
+order by avg(adjusted) desc
+
+
+select rank_in_year, genres from movies
+ 
+
+select avg(adjusted) as avg_revenue, year, studio from movies
+group by  year, studio 
+order by avg(adjusted) desc
+
+select avg(adjusted) as revnue_yr, Genres, year from movies
+group by genres, year
+order by avg(adjusted)
+
+select count(genres) popular, genres, month(release_date) yr from movies
+group by genres, release_date
+order by release_date desc
